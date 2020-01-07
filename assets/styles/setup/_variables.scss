@@ -1,0 +1,13 @@
+
+$breakpoint-phone-landscape: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 992px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-wide: 1620px;
+
+$phone: "screen and (max-width: #{$breakpoint-phone-landscape - 1})";
+$phone-landscape: "screen and (min-width: #{$breakpoint-phone-landscape})";
+$tablet: "screen and (min-width: #{$breakpoint-tablet - 1})";
+$laptop: "screen and (min-width: #{$breakpoint-laptop - 1})";
+$desktop: "screen and (min-width: #{$breakpoint-desktop - 1 })";
+$desktop-wide: "screen and (min-width: #{$breakpoint-desktop-wide - 1 })";

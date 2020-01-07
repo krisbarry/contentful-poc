@@ -1,0 +1,229 @@
+.agency {
+    .container {
+        padding: 0;
+        max-width: initial;
+    }
+    .icon {
+        position: relative;
+        &:before {
+            width: 13px;
+            height: 13px;
+            content: '';
+            position: absolute;
+            background-size: 100% 100%;
+        }
+    }
+    .address:before {
+        background-image: url('../images/marker.svg');
+    }
+    .hours:before {
+        background-image: url('../images/clock.svg');
+    }
+    .email:before {
+        background-image: url('../images/email.svg');
+    }
+    .phone:before {
+        background-image: url('../images/phone.svg');
+    }
+    .profile:before {
+        background-image: url('../images/profile.svg');
+    }
+    .hero {
+        top: 0;
+        width: 100%;
+        position: relative;
+        max-height: 275px;
+        background-position: left;
+        @media #{$tablet} {
+            position: absolute;
+            max-height: 375px;
+            &.component {
+                background-position: center;
+            }
+        }
+    }
+    .agency-details {
+        width: 100%;
+        z-index: 1;
+        margin: 0;
+        position: relative;
+        font-size: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        @media #{$tablet} {
+            top: 90px;
+            left: calc(58.33% + 25px);
+            width: calc(33.33% - 25px);
+            margin: 60px 0 15px;
+            position: sticky;
+        }
+        .intro {
+            padding: 20px;
+        }
+        .county {
+            color: #862633;
+            font-size: 18px;
+        }
+        .name {
+            font-size: 16px;
+            font-weight: initial;
+        }
+        .welcome {
+            margin: 10px 0;
+        }
+        .address, .hours, .phone, .email {
+            float: left;
+            width: 50%;
+            padding-left: 20px;
+        }
+        .address, .hours {
+            height: 75px;
+        }
+        .icon:before {
+            top: 3px;
+            left: -3px;
+        }
+        .alert {
+            padding: 20px;
+            background-color: #f6f6f6;
+            h4 {
+                margin: 0 0 3px 25px;
+                position: relative;
+                font-size: 18px;
+                font-weight: normal;
+                &:before {
+                    top: 6px;
+                    left: -20px;
+                    width: 15px;
+                    height: 15px;
+                    content: '';
+                    position: absolute;
+                    background-size: cover;
+                    background-image: url('../images/alert.svg');
+                }
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+    div.agents {
+        padding: 20px 20px 0;
+        font-size: 12px;
+        @media #{$tablet} {
+            padding: 20px;
+        }
+        &.manager {
+            .picture img {
+                max-height: 125px;
+            }
+            .phone, .email, .profile {
+                float: left;
+                margin-right: 25px;
+            }
+            .details {
+                .name {
+                    margin: 10px 0 5px;
+                }
+                .profile {
+                    font-size: 12px;
+                    font-weight: initial;
+                    text-transform: initial;
+                }
+            }
+        }
+        &:not(.manager) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .agent {
+                padding-bottom: 15px;
+            }
+        }
+        h4 {
+            margin: 0 0 20px;
+            font-size: 16px;
+        }
+        .picture {
+            float: left;
+            width: initial;
+            padding: 0 15px 0 0;
+            img {
+                max-height: 100px;
+                border-radius: 50%;
+            }
+        }
+        .details {
+            width: initial;
+            padding: 5px 15px;
+            .name {
+                margin: 5px 0;
+                font-weight: bold;
+            }
+            .profile {
+                font-size: 10px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .email a {
+                text-decoration: initial;
+            }
+        }
+        .icon {
+            margin: 5px 0 5px 20px;
+            &:before {
+                top: 3px;
+                left: -20px;
+            }
+        }
+    }
+    .team {
+        padding: 0 20px 20px;
+        font-size: 11px;
+        .subtitle {
+            margin: 0 0 15px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .photo {
+            float: left;
+            width: 66.67%;
+            img {
+                width: 100%;
+                border-radius: 3px;
+            }
+        }
+        .body {
+            float: left;
+            width: 33.33%;
+            padding: 3px 15px 0;
+        }
+    }
+    .field-guides.x-up.flex.xs12 {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    @media #{$tablet} {
+        .alert-exists div.agents.manager {
+            margin-top: -40px;
+        }
+        div.agents {
+            padding-left: 8.33%;
+            &.manager {
+                margin-top: 85px;
+            }
+        }
+        .team {
+            padding: 0 0 25px 8.33%;
+        }
+        .field-guides.x-up.flex.xs12 {
+            max-width: 58.33%;
+            flex-basis: 58.33%;
+            padding-right: 0;
+            .flex.md3 {
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.x-up {
+    padding: 35px 15px;
+    @media #{$tablet} {
+        padding: 40px 8.33%;
+    }
+    .header {
+        margin: 0 0 25px;
+        h3 {
+            color: #862633;
+            font-size: 28px;
+        }
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+    &.field-guides.component {
+        padding: 15px;
+        @media #{$tablet} {
+            padding: 40px 8.33%;
+        }
+        .header {
+            margin: 10px 0 25px;
+            h3 {
+                color: #862633;
+                margin: 0 0 10px;
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+        }
+        .items {
+            .flex {
+                margin-bottom: 25px;
+            }
+            .field-guide-summary {
+                width: 80%;
+                cursor: pointer;
+                margin: 0 auto;
+                .image {
+                    height: 75px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .subtitle {
+                    margin: 20px 0 5px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 24px;
+                    letter-spacing: .5px;
+                }
+                .summary {
+                    margin: 0 0 10px;
+                    font-size: 14px;
+                }
+                .link {
+                    color: #0E578C;
+                    margin: 15px 0 0;
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    &:after {
+                        top: 2px;
+                        right: -20px;
+                        width: 12px;
+                        height: 12px;
+                        content: '';
+                        position: absolute;
+                        background-size: 100% 100%;
+                        background-image: url('../images/arrow.svg')
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &.promos {
+        background-color: #F8F8F8;
+        @media #{$tablet} {
+            .items .promo {
+                width: 90%;
+                .body {
+                    margin: 10px 15px 0;
+                    font-size: 15px;
+                }
+            }
+        }
+        .next, .previous {
+            i {
+                color: #1C355B;
+            }
+            &.inactive i {
+                color: #aaa;
+            }
+        }
+        .items {
+            .promo {
+                width: 80%;
+                margin: 0 auto 15px;
+                .image {
+                    position: relative;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .subtitle {
+                    color: #862633;
+                    width: 100%;
+                    margin: 10px 0 0;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .body {
+                    margin: 10px;
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    &.testimonials {
+        background-color: #F8F8F8;
+        .testimonial {
+            width: 90%;
+            margin: 0 5% 25px;
+            position: relative;
+            font-size: 13px;
+            box-shadow: 1px 3px 9px rgba(217, 217, 217, 0.5);
+            text-align: left;
+            background-color: #fff;
+            .blurb-wrapper {
+                height: 125px;
+                padding: 15px;
+            }
+            .blurb {
+                height: 95px;
+                overflow-y: hidden;
+            }
+            .who {
+                padding: 15px;
+                border-top: 1px solid #E6E6E6;
+            }
+            .picture, .details {
+                float: left;
+            }
+            .picture img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            .details {
+                margin-left: 7px;
+            }
+            .name {
+                font-weight: bold;
+            }
+            .location {
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+#app.agencies {
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: initial;
+    }
+    .map-container, .vue-map-container {
+        left: 0;
+        width: 100%;
+        height: 600px;
+        z-index: 0;
+        @media #{$phone} {
+            height: 420px;
+        }
+    }
+    .component-renderer.layout {
+        z-index: 1;
+        position: relative;
+        background-color: #efefef;
+        // background-color: #862633;
+    }
+    .hero.component {
+        height: 600px;
+        @media #{$phone} {
+            height: 360px;
+        }
+        .content {
+            color: #fff;
+        }
+    }
+    .rich-text {
+        color: #333;
+        // color: #fff;
+        padding: 40px 8.33% 0;
+    }
+    .dynamic {
+        padding: 0 8.33% 40px;
+    }
+    .find-an-agency {
+        .v-input__slot {
+            background-color: #fff !important;
+            input {
+                color: #000 !important;
+            }
+        }
+        > div {
+            &:first-child .v-input {
+                padding-right: 10px;
+            }
+            &:last-child .v-input {
+                padding-left: 10px;
+            }
+        }
+    }
+    .dynamic.local-agents {
+        .header {
+            margin: 15px 0 0;
+        }
+        .header h3, .items .next i, .items .previous i, .agent-summary {
+            color: #fff;
+        }
+        .items {
+            .image img {
+                box-shadow: 0 0 25px 0 #fff;
+                max-height: 150px;
+            }
+        }
+        @media #{$phone} {
+            .header h3 {
+                font-size: 18px;
+            }
+            .items {
+                .xs6:nth-child(n+3) {
+                    display: none;
+                }
+                .agency, .details {
+                    margin: 0 7px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                .image img {
+                    max-height: 125px;
+                }
+            }
+        }
+    }
+    .agency-details {
+        .photo, .content {
+            float: left;
+        }
+        .photo {
+            padding-right: 10px;
+            img {
+                max-height: 75px;
+                border-radius: 3px;
+            }
+        }
+        .content {
+            padding-top: 3px;
+            .name {
+                font-weight: bold;
+                :hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

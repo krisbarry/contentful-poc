@@ -1,0 +1,12 @@
+.frequently-asked-questions.component {
+    .faqs .v-expansion-panel__header {
+        background: #f9f9f9;
+    }
+    .answer {
+        padding: 15px 25px;
+        background: #f2f2f2;
+        p {
+            margin: 0;
+        }
+    }
+}

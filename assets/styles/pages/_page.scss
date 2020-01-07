@@ -1,0 +1,68 @@
+#app {
+    .x-up.component {
+        margin: 0;
+        text-align: center;
+        .next {
+            top: calc(50% - 50px);
+            right: -25px;
+            position: absolute;
+        }
+        .previous {
+            top: calc(50% - 50px);
+            left: -25px;
+            position: absolute;
+        }
+        .next, .previous {
+            i {
+                color: #86263A;
+                cursor: pointer;
+                font-size: 44px;    
+            }
+            &.inactive i {
+                cursor: initial;
+                opacity: .33
+            }
+        }
+        .items {
+            position: relative;
+        }
+        @media #{$tablet} {
+            .next {
+                right: -4%;
+            }
+            .previous {
+                left: -4%;
+            }
+        }
+    }    
+    .dynamic.local-agents {
+        @media #{$tablet} {
+            .header h3 {
+                font-size: 40px;
+            }
+            .items .agent-summary {
+                margin: 0;
+            }
+        }
+        .header h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .items {
+            .agent-summary {
+                cursor: pointer;
+                margin: 0 0 15px;
+                font-size: 12px;
+            }
+            .image img {
+                max-width: 85%;
+                border-radius: 50%;
+            }
+            .subtitle {
+                margin: 3px 0 0;
+                font-size: 18px;
+                font-weight: bolder;                
+            }
+        }
+    }
+}

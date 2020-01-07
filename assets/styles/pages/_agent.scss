@@ -1,0 +1,22 @@
+.agent.page {
+    .contact-info, .details, .photo, .social  {
+        float: left;
+    }
+    .photo img {
+        max-height: 125px;
+        border-radius: 5px;
+    }
+    .photo img, .social {
+        padding-right: 15px;
+    }
+    .phone span {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    .social img {
+        margin-bottom: -3px;
+    }
+    .subtitle {
+        padding-top: 15px;
+    }
+}

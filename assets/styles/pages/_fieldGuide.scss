@@ -1,0 +1,17 @@
+.field-guide.page {
+    .image {
+        float: left;
+        margin: 15px 15px 15px 0;
+        max-width: 40%;
+        img {
+            max-width: 100%;
+        }
+    }
+    .details {
+        .title {
+            margin: 0 0 10px;
+            font-size: 32px !important;
+            font-weight: bold;
+        }
+    }
+}

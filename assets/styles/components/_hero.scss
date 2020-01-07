@@ -1,0 +1,45 @@
+.hero.component {
+    height: 480px;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    .content {
+        margin: 0 0 15px;
+        p {
+            margin: 0;
+        }
+    }
+    h2 {
+        font-size: 56px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 28px;
+        margin-bottom: 5px;            
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 18px;            
+    }
+    .v-btn {
+        color: #fff;
+        margin: 0;
+        border-radius: 5px;
+        &:not(.v-btn--depressed):not(.v-btn--flat) {
+            box-shadow: none;
+        }
+        &.cta1 {
+            margin-right: 5px;
+            &.theme--light:not(.v-btn--icon):not(.v-btn--flat) {
+                background-color: #862633;
+            }
+        }
+    }
+}

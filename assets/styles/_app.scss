@@ -1,0 +1,407 @@
+#app {
+
+  &.fixed-toolbar {
+    .v-content {
+      margin-top: 80px;
+    }
+    .v-toolbar.theme--light {
+      height: 80px;
+      padding: 5px 0 0 !important;
+      position: fixed;
+      background-color: #fff;
+      .top-bar {
+        top: 0;
+        width: 100%;
+        height: 30px;
+        display: initial;
+        z-index: 0;        
+        position: absolute;
+        background-color: #eee;
+        .agents .county {
+          color: #862633;
+          margin: 2px 10px 0 17px;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-decoration: underline;
+          text-decoration-color: #aaa;
+          &:before {
+            top: 0;
+            left: 0;
+            width: 12px;
+            height: 17px;
+            content: '';
+            position: absolute;
+            background-size: 100% 100%;
+            background-image: url('../images/marker.svg');
+          }
+        }
+        .quote:before {
+          top: 5px;
+          left: 0;
+          width: 12px;
+          height: 17px;
+          content: '';
+          opacity: 1;
+          position: absolute;
+          background-size: 100% 100%;
+          background-image: url('../images/dollar.svg');
+        }
+        .locale {
+          display: none;
+        }
+        .v-toolbar__items {
+          float: right;
+          margin: 0;
+          .v-btn.theme--light {
+            font-size: 11px;
+          }
+        }
+        @media #{$tablet} {
+          .locale {
+            display: initial;
+          }
+          .v-toolbar__items {
+            margin: 0 8.33% 0 0;
+            .v-btn.theme--light {
+              margin: 0 7px 0 0;
+            }
+          }
+        }
+      }
+      .main {
+        .login:before {
+          top: 24px;
+          left: 5px;
+          width: 15px;
+          height: 15px;
+          content: '';
+          opacity: 1;
+          position: absolute;
+          background-size: 100% 100%;
+          background-image: url('../images/account.svg');
+        }
+        .v-btn__content {
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+      .menu {
+        display: initial;
+      }
+      .v-toolbar__items {
+        margin: 35px 8.33% 0 0;
+      }
+      .v-btn.v-toolbar__side-icon {
+        margin: 45px 10px 0 0;
+        .v-btn__content .v-icon {
+          color: #000;
+        }
+      }
+      .logo-wrapper {
+        position: relative;
+        margin: 15px 0 0 15px;
+        a, .logo-content {
+          float: left;
+        }
+        .logo-content {
+          float: left;
+          margin: 30px 0 0 7px;
+          min-width: 175px;
+        }
+        @media #{$tablet} {
+          margin: 7px 0 0 8.33%;
+          .logo-content {
+            float: initial;
+            margin: 30px 0 0 100px;
+            min-width: 250px;
+          }
+        }
+      }
+      .logo-content, .v-btn.theme--light {
+        color: #000;
+      }
+    }
+  }
+  .top-bar {
+    display: none;
+  }
+
+  &.application.theme--light {
+    background-color: #fff;
+  }
+  .hide {
+    display: none;
+  }
+  .clear {
+      clear: both;
+  }
+  .logo-wrapper {
+    a, .logo-content {
+      float: left;
+    }
+    .logo {
+      width: 95px;
+      height: 65px;
+      background-size: 100% 100%;
+      background-image: url('../images/fb-logo.svg')
+    }
+    .logo-content {
+      color: #fff;
+      margin: 13px 0 0 7px;
+      .title {
+        font-size: 13px !important;
+        font-weight: bold;
+      }
+      .subtitle {
+        font-size: 12px;
+      }
+    }  
+  }
+  .v-btn.theme--light {
+    text-transform: initial;      
+  }
+  .v-navigation-drawer.theme--light {
+    background-color: #eee;
+  }
+  .v-toolbar {
+    padding: 10px 8.33% !important;
+    .v-toolbar__content {
+      padding: 0;
+    }
+    .v-btn {
+      &.v-btn--active:before, &:hover:before, &:focus:before {
+        background-color: inherit;
+      }
+      &.theme--light {
+        color: #fff;
+      }
+      .v-btn__content .v-icon {
+        color: #fff;
+      }
+    }
+    .menu {
+      top: 30px;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      display: none;
+      position: absolute;
+      background-color: #862633;
+      i:before {
+        top: 15px;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        content: '';
+        position: absolute;
+        background-size: 100% 100%;
+        background-image: url('../images/menu.svg');
+      }
+    }
+  }
+  .locale.v-input.v-text-field--outline {
+    max-width: 175px;
+    margin-right: 15px;
+    > .v-input__control > .v-input__slot {
+      margin: 0;
+      min-height: initial;
+      input {
+        font-size: 14px;
+        max-height: 30px;
+        margin-top: 6px;
+      }
+    }
+    .v-label {
+      top: 7px;
+      font-size: 10px;
+    }
+    .v-input__append-inner {
+      margin-top: 9px;
+    }
+    .v-text-field__details {
+      margin: 0;
+    }
+    .v-messages {
+      min-height: 0;
+    }
+  }
+  .theme--light.v-toolbar {
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+  .v-list__tile__title {
+    margin-left: 10px;
+  }
+  .v-content {
+    padding: 0 !important;
+  }
+  .v-footer {
+    color: #ccc;
+    padding: 25px 8.33%;
+    position: relative;
+    background: #333;
+    // background: #eee;
+    min-height: fit-content;
+    // background-size: cover;
+    // background-image: url('../images/footer-bg.png');
+    @media #{$tablet} {
+      padding: 50px 8.33% 25px;
+      .top {
+        &.md3 {
+          max-width: 28%;
+          flex-basis: 28%;
+          &.logo-wrapper {
+            max-width: 16%;
+            flex-basis: 16%;
+            text-align: initial;
+            .logo {
+              margin: initial;
+            }
+          }
+        }
+      }
+    }
+    .top {
+      padding: 0 10px 10px;
+      &.logo-wrapper {
+        padding: 0 0 20px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 14px;
+        .logo {
+          margin: 0 auto;
+          background-image: url('../images/fb-footer-logo.svg');
+        }
+      }
+      .nc {
+        margin: 7px 0 2px;
+        font-weight: bold;
+      }
+      &.first .subtitle:before {
+        background-image: url('../images/clock.svg');
+      }
+      &.second .subtitle:before {
+        background-image: url('../images/account.svg');        
+      }
+      &.third .subtitle:before {
+        background-image: url('../images/mobile.svg');        
+      }
+      .subtitle {
+        margin: 0 0 7px 30px;
+        position: relative;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:before {
+          left: -30px;
+          width: 22px;
+          height: 22px;
+          content: '';
+          position: absolute;
+          background-size: 100% 100%;
+        }
+      }
+      .body {
+        font-size: 13px;
+        padding-right: 15px;
+      }
+      .cta {
+        margin: 7px 0 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          margin: 3px 0;
+        }
+        a {
+          color: #fff;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    .links {
+      margin: 15px 0 0;
+      padding: 25px 0 0;
+      border-top: 1px solid #555;
+      .v-toolbar__items {
+        justify-content: center;
+        .v-btn__content {
+          color: #fff;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .copyright {
+      margin: 20px 0 10px;
+      font-size: 10px;
+      text-align: center;
+    }
+}
+  .vue-map-container.geocoder {
+    display: none;
+  }
+  .page-enter-active, .page-leave-active {
+      transition: opacity .15s
+  }
+  .page-enter, .page-leave-active {
+      opacity: 0
+  }
+  .slide-left-enter-active {
+      opacity: .1;
+      animation: transition-left-in .15s;
+  }
+  .slide-left-leave-active {
+      opacity: 1;
+      animation: transition-left-out .15s;
+  }
+  .slide-right-enter-active {
+      opacity: .1;
+      animation: transition-right-in .15s;
+  }
+  .slide-right-leave-active {
+      opacity: 1;
+      animation: transition-right-out .15s;
+  }
+}
+@keyframes transition-left-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: .1;
+    }
+}
+@keyframes transition-left-in {
+    from {
+      transform: translateX(100%);
+      opacity: .1;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+@keyframes transition-right-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+      opacity: .1;
+    }
+}
+@keyframes transition-right-in {
+    from {
+      transform: translateX(-100%);
+      opacity: .1;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
